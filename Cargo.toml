@@ -1,0 +1,19 @@
+[package]
+name = "advent_of_code"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "advent_of_code"
+crate-type = ["lib"]
+
+[dev-dependencies]
+criterion = "0.3"
+
+[[bench]]
+name = "days"
+harness = false
+
+[dependencies]
+hashbrown = "0.13.1"
+lazy_static = "1.4.0"
